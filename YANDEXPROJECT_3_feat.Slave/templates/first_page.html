@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<head><link rel="stylesheet" type="text/css" href="{{ style }}" ></head>
+	<div class='tab' align="center">
+	<a href="http://127.0.0.1:8080/give" class="button">Передать файл</a><br>
+	<a href="http://127.0.0.1:8080/download" class="button">Получить файл</a>
+	</div>
+<div class="boots">
+	<div class="alert alert-primary" role="alert">ПАМЯТКА</div>
+	<div class="alert alert-secondary" role="alert">Всем привет, данный сайт предназначен для того, </div>
+	<div class="alert alert-success" role="alert">чтобы перекидывать файлы вашим друзьям без потери качества.</div>
+	<div class="alert alert-danger" role="alert">Если вы передаете файл, то нажмите на ссылку "Передать файл", </div>
+	<div class="alert alert-warning" role="alert">затем выберите файл и отправьте, а код скажите вашему другу.</div>
+	<div class="alert alert-primary" role="alert">А если вы хотите получить файл, то нажмите на ссылку "Получить файл"</div>
+	<div class="alert alert-secondary" role="alert">и введите код, который сказал ваш друг.</div>
+</div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<head><link rel="stylesheet" type="text/css" href="{{ style }}" ></head>
+<form class="get_form">
+    {{ form.hidden_tag() }}
+    <p>
+        {{ form.cod.label }}<br>
+        {{ form.cod(class="form-control") }}<br>
+        {% for error in form.cod.errors %}
+        <div class="alert alert-danger" role="alert">
+            {{ error }}
+        </div>
+        {% endfor %}
+    </p>
+    <p>{{ form.download(type="submit", class="btn btn-primary") }}</p>
+</form>
+{% endblock %}
